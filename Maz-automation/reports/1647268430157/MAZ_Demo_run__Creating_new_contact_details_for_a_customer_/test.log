@@ -1,0 +1,54 @@
+[2022-03-14 08:03:54] [TestRunRegistrar.java] [15] [WARN] Reporting disabled: using no op test run registrar
+[2022-03-14 08:03:54] [TestRunRegistrar.java] [15] [WARN] Reporting disabled: using no op test run registrar
+[2022-03-14 08:03:54] [IMessager.java] [15] [INFO] TEST [Default test] STARTED at [20:03:54 2022-03-14]
+[2022-03-14 08:04:45] [ExtendedWebElement.java] [15] [ERROR] FAIL: type - waitCondition for element 'usernameTb (By.xpath: //div//input[contains(@id,'language')])' not satisfied!
+[2022-03-14 08:04:46] [IMessager.java] [15] [ERROR] TEST [Default test] FAILED at [20:04:46 2022-03-14] - no such element: Unable to locate element: {"method":"xpath","selector":"//div//input[contains(@id,'language')]"}
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HARI', ip: '192.168.1.95', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Chandru\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:38203}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 373180da9ef31dc6a9fb49ec4ed...}
+Session ID: 373180da9ef31dc6a9fb49ec4edd26e3
+*** Element info: {Using=xpath, value=//div//input[contains(@id,'language')]}
+
+jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
+java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+com.qaprosoft.carina.core.foundation.webdriver.listener.EventFiringSeleniumCommandExecutor.execute(EventFiringSeleniumCommandExecutor.java:50)
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath$original$kKe9jJhn(RemoteWebDriver.java:428)
+org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath$original$kKe9jJhn$accessor$UXNyTI0R(RemoteWebDriver.java)
+org.openqa.selenium.remote.RemoteWebDriver$auxiliary$OGxzTZ0x.call(Unknown Source)
+com.zebrunner.agent.core.webdriver.PublicMethodInvocationInterceptor.onPublicMethodInvocation(PublicMethodInvocationInterceptor.java:18)
+org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java)
+org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+org.openqa.selenium.remote.RemoteWebDriver.findElement$original$kKe9jJhn(RemoteWebDriver.java:315)
+org.openqa.selenium.remote.RemoteWebDriver.findElement$original$kKe9jJhn$accessor$UXNyTI0R(RemoteWebDriver.java)
+org.openqa.selenium.remote.RemoteWebDriver$auxiliary$UTkuhIYa.call(Unknown Source)
+com.zebrunner.agent.core.webdriver.PublicMethodInvocationInterceptor.onPublicMethodInvocation(PublicMethodInvocationInterceptor.java:18)
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java)
+jdk.internal.reflect.GeneratedMethodAccessor26.invoke(Unknown Source)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:566)
+org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+com.sun.proxy.$Proxy30.findElement(Unknown Source)
+org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+com.qaprosoft.carina.core.foundation.webdriver.locator.ExtendedElementLocator.findElement(ExtendedElementLocator.java:91)
+org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+com.sun.proxy.$Proxy33.clear(Unknown Source)
+com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement$1.doType(ExtendedWebElement.java:1448)
+com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.executeAction(ExtendedWebElement.java:1282)
+com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.overrideAction(ExtendedWebElement.java:1376)
+com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1361)
+com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.type(ExtendedWebElement.java:671)
+com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.type(ExtendedWebElement.java:659)
+com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.type(ExtendedWebElement.java:649)
+com.abinbev.carina.demo.gui.pages.MazDemo.login(MazDemo.java:30)
+com.abinbev.carina.demo.cucumber.steps.MazDemoSteps.login(MazDemoSteps.java:14)
+?.I log into MAZ application using valid user credentials(file:///C:/AbinBevDemo/Maz-automation/src/test/resources/features/MazDemo.feature:6)

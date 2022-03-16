@@ -1,0 +1,15 @@
+[2022-02-11 06:24:19] [TestRunRegistrar.java] [15] [WARN] Reporting disabled: using no op test run registrar
+[2022-02-11 06:24:19] [TestRunRegistrar.java] [15] [WARN] Reporting disabled: using no op test run registrar
+[2022-02-11 06:24:19] [IMessager.java] [15] [INFO] TEST [GSM Arena News - Web tests by cucumber] STARTED at [18:24:19 2022-02-11]
+[2022-02-11 06:24:24] [IMessager.java] [21] [INFO] INFO: opening url 'https://www.gsmarena.com'
+[2022-02-11 06:24:44] [DriverListener.java] [21] [INFO] URL 'https://www.gsmarena.com' opened
+[2022-02-11 06:24:44] [DriverHelper.java] [15] [ERROR] Unable to open url during 20sec!
+[2022-02-11 06:24:45] [IMessager.java] [15] [ERROR] TEST [GSM Arena News - Web tests by cucumber] FAILED at [18:24:45 2022-02-11] - Unable to open url during 20sec!
+
+org.testng.Assert.fail(Assert.java:87)
+com.qaprosoft.carina.core.foundation.webdriver.DriverHelper.openURL(DriverHelper.java:167)
+com.qaprosoft.carina.core.foundation.webdriver.DriverHelper.openURL(DriverHelper.java:130)
+com.qaprosoft.carina.core.foundation.webdriver.DriverHelper.open(DriverHelper.java:120)
+com.abinbev.carina.demo.cucumber.steps.GSMArenaNewsSteps.iAmOnMainPage(GSMArenaNewsSteps.java:29)
+?.I am on main page(file:///C:/AbinBevDemo/Maz-automation/src/test/resources/features/GSMArenaNews.feature:6)
+[2022-02-11 06:24:45] [Screenshot.java] [21] [ERROR] ExecutionException error detected on capture full screenshot!
