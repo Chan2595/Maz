@@ -1,52 +1,47 @@
 package com.abinbev.carina.demo.cucumber.steps;
 
-import com.abinbev.carina.demo.gui.pages.MazDemo;
+import com.abinbev.carina.demo.gui.pages.CreditPage;
+import com.abinbev.carina.demo.gui.pages.LoginPage;
 import com.qaprosoft.carina.core.foundation.cucumber.CucumberRunner;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 
 public class MazDemoSteps extends CucumberRunner {
-	MazDemo demo = new MazDemo(getDriver());
-
+	LoginPage demo = new LoginPage(getDriver());
+	CreditPage credit =  new CreditPage(getDriver());
+	
 	@Given("^I log into MAZ application using valid user credentials$")
 	public void login() {
 		demo.login();
 	}
-	@Then("^Verify application opened with appropriate title$")
-	public void openApplication() {
-		
+	@Then("^click on CustomerData Tab under CREDIT Module$")
+	public void clickCustomerData() throws InterruptedException {
+		credit.clickCustomerData();
 	}
 	
-	@Then("^click on collections tab$")
-	public void navigateToCollections() {
-		
+	@Then("^click on Advance Search BUTTON and provide Existing customer value in Customer Number field and click on Search BUTTON \"([^\"]*)\"$")
+	public void navigateToCollections(String CustomerNumber) throws InterruptedException {
+		credit.searchCustomer(CustomerNumber);
 	}
 	
-	@Then("^Click on worklist subtab$")
-	public void navigateToWorkList() {
+	 @And("^Double Click on the Search Customer and verify application displays customer detail screen \"([^\\\"]*)\"$")
+	 public void enterCustomerDetail(String CustomerNumber) throws InterruptedException {
+			credit.enterCustomerDetailsScreen(CustomerNumber);
+		}
 		
-	}
-	
-	@Then("^From the list click on any one customer$")
-	public void clickCustomers() {
-		
-	}
-	
-	@Then("^Verify customer details screen is displayed$")
-	public void verifyCustDetails() {
-		
-	}
-	
+	 @Then("^Click on Characteristics TAB$")
+	 public void clickCharacteristics() throws InterruptedException {
+			credit.clickonCharacteristicsTAB();
+		}
+	 @And("^click on ADHOCCredit LIMIT WF SUB TAB and Mandatory fields to be filled are present$")
+	 public void clickadhocCreditLimit() throws InterruptedException {
+			credit.clickonadHocCreditTAB();
+		}
 }
 
 	
-	/*
-	 * @Then("^Fill all mandatory fields and click on save {String},{String},{String},{String}$"
-	 * ) public void fillMandatoryField(String firstName,String emailId,String
-	 * lastName,String mobileNumber) {
-	 * 
-	 * }
-	 */
+
 	
 

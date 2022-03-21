@@ -1,21 +1,21 @@
 Feature: MAZ Demo run
   To execute test cases on MAZ application
   
-  @test1
-  Scenario Outline: Creating new contact details for a customer
+  @MazDemo
+  Scenario Outline: Updating Credit Limit for a customer
   Given I log into MAZ application using valid user credentials
-  Then Verify application opened with appropriate title
-  Then click on collections tab
-  And Click on worklist subtab
-  Then From the list click on any one customer
-  And Verify customer details screen is displayed
-  #And click on contacts tab and then click on  add contact button
-  #Then Fill all mandatory fields and click on save "<FirstName>","<EmailId>","<LastName>","<MobileNumber>"
-  #Then verify whether success message is displayed and contact details appears
-  #Then I logout of the application
+  Then click on CustomerData Tab under CREDIT Module
+  Then click on Advance Search BUTTON and provide Existing customer value in Customer Number field and click on Search BUTTON "<CustomerNumber>"
+  And Double Click on the Search Customer and verify application displays customer detail screen "<CustomerNumber>"
+  Then Click on Characteristics TAB
+  And click on ADHOCCredit LIMIT WF SUB TAB and Mandatory fields to be filled are present
+ 	#Then provide values in CreditLimit CreditScore RiskClass DecisionDate and ProcessionUser in appropriate field
+  #Then click on CustomerData Tab under CREDIT Module
+  #And click on Credit Review and select Review Workflow as ADHOC review and click on Initiate credit Review
+  #Then CLick on Worklist Tab and verify appropriate Review Status for the Customer
   
   Examples:
-  |FirstName     |EmailId       |LastName|MobileNumber|
-  |TestCollection|test@gmail.com|Maz     |9952163021|
+  |CustomerNumber     |   
+  |0101110543         |		
   
   
