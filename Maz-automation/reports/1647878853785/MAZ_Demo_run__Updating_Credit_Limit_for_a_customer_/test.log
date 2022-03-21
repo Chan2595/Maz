@@ -1,0 +1,64 @@
+[2022-03-21 09:37:35] [TestRunRegistrar.java] [17] [WARN] Reporting disabled: using no op test run registrar
+[2022-03-21 09:37:35] [TestRunRegistrar.java] [17] [WARN] Reporting disabled: using no op test run registrar
+[2022-03-21 09:37:35] [IMessager.java] [17] [INFO] TEST [Default test] STARTED at [21:37:35 2022-03-21]
+[2022-03-21 09:37:41] [IMessager.java] [23] [INFO] INFO: opening url 'https://turtle2.highradius.com/'
+[2022-03-21 09:37:45] [DriverListener.java] [23] [INFO] URL 'https://turtle2.highradius.com/' opened
+[2022-03-21 09:37:46] [LoginPage.java] [17] [INFO] Logging into HighRadius Application
+[2022-03-21 09:37:46] [LoginPage.java] [17] [INFO] User Name Entered: VJain
+[2022-03-21 09:37:46] [LoginPage.java] [17] [INFO] Password Entered: ABIMex@2022
+[2022-03-21 09:37:46] [DriverListener.java] [17] [INFO] PASS: keys cleared in element 'usernameTb'.
+[2022-03-21 09:37:46] [DriverListener.java] [17] [INFO] PASS: keys 'VJain' are sent to element 'usernameTb'.
+[2022-03-21 09:37:47] [DriverListener.java] [17] [INFO] PASS: keys cleared in element 'pwdTb'.
+[2022-03-21 09:37:47] [DriverListener.java] [17] [INFO] PASS: keys 'ABIMex@2022' are sent to element 'pwdTb'.
+[2022-03-21 09:37:48] [DriverListener.java] [17] [INFO] PASS: element 'signInBtn' is clicked.
+[2022-03-21 09:37:49] [LoginPage.java] [17] [INFO] Logged into HR application successfully
+[2022-03-21 09:37:53] [DriverListener.java] [17] [INFO] PASS: element 'customerDataTab' is clicked.
+[2022-03-21 09:37:57] [CreditPage.java] [17] [INFO] CustomerTab is clicked:
+[2022-03-21 09:38:05] [DriverListener.java] [17] [INFO] PASS: element 'AdvancedSearchTAB' is clicked.
+[2022-03-21 09:38:05] [CreditPage.java] [17] [INFO] Entering Customer Number: 0101110543
+[2022-03-21 09:38:05] [DriverListener.java] [17] [INFO] PASS: keys cleared in element 'customerNumberField'.
+[2022-03-21 09:38:06] [DriverListener.java] [17] [INFO] PASS: keys '0101110543' are sent to element 'customerNumberField'.
+[2022-03-21 09:38:07] [DriverListener.java] [17] [INFO] PASS: element 'searchBUtton' is clicked.
+[2022-03-21 09:38:07] [CreditPage.java] [17] [INFO] double click on the customer
+[2022-03-21 09:38:08] [IMessager.java] [17] [ERROR] TEST [Default test] FAILED at [21:38:08 2022-03-21] - no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'0101110543')]"}
+  (Session info: chrome=99.0.4844.74)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-2FAOSDT', ip: '192.168.43.246', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\aravi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49463}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 3a5ec44d26e89384069bd87fae7...}
+Session ID: 3a5ec44d26e89384069bd87fae77a934
+*** Element info: {Using=xpath, value=//div[contains(text(),'0101110543')]}
+
+jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+com.qaprosoft.carina.core.foundation.webdriver.listener.EventFiringSeleniumCommandExecutor.execute(EventFiringSeleniumCommandExecutor.java:50)
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath$original$mJk3UP8O(RemoteWebDriver.java:428)
+org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath$original$mJk3UP8O$accessor$mKWKi72J(RemoteWebDriver.java)
+org.openqa.selenium.remote.RemoteWebDriver$auxiliary$l1GZ9OxA.call(Unknown Source)
+com.zebrunner.agent.core.webdriver.PublicMethodInvocationInterceptor.onPublicMethodInvocation(PublicMethodInvocationInterceptor.java:18)
+org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java)
+org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+org.openqa.selenium.remote.RemoteWebDriver.findElement$original$mJk3UP8O(RemoteWebDriver.java:315)
+org.openqa.selenium.remote.RemoteWebDriver.findElement$original$mJk3UP8O$accessor$mKWKi72J(RemoteWebDriver.java)
+org.openqa.selenium.remote.RemoteWebDriver$auxiliary$H6F1HW2v.call(Unknown Source)
+com.zebrunner.agent.core.webdriver.PublicMethodInvocationInterceptor.onPublicMethodInvocation(PublicMethodInvocationInterceptor.java:18)
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:564)
+org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+com.sun.proxy.$Proxy30.findElement(Unknown Source)
+org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+com.abinbev.carina.demo.gui.pages.CreditPage.enterCustomerDetailsScreen(CreditPage.java:108)
+com.abinbev.carina.demo.cucumber.steps.MazDemoSteps.enterCustomerDetail(MazDemoSteps.java:31)
+?.Double Click on the Search Customer and verify application displays customer detail screen "0101110543"(file:///E:/Maz_Automation/Dev_Maz/Maz/Maz-automation/src/test/resources/features/MazDemo.feature:9)

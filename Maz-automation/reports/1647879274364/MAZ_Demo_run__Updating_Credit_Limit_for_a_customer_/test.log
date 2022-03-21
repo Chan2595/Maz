@@ -1,0 +1,27 @@
+[2022-03-21 09:44:38] [TestRunRegistrar.java] [17] [WARN] Reporting disabled: using no op test run registrar
+[2022-03-21 09:44:38] [TestRunRegistrar.java] [17] [WARN] Reporting disabled: using no op test run registrar
+[2022-03-21 09:44:38] [IMessager.java] [17] [INFO] TEST [Default test] STARTED at [21:44:38 2022-03-21]
+[2022-03-21 09:44:44] [IMessager.java] [23] [INFO] INFO: opening url 'https://turtle2.highradius.com/'
+[2022-03-21 09:44:49] [DriverListener.java] [23] [INFO] URL 'https://turtle2.highradius.com/' opened
+[2022-03-21 09:44:50] [LoginPage.java] [17] [INFO] Logging into HighRadius Application
+[2022-03-21 09:44:50] [LoginPage.java] [17] [INFO] User Name Entered: VJain
+[2022-03-21 09:44:50] [LoginPage.java] [17] [INFO] Password Entered: ABIMex@2022
+[2022-03-21 09:44:50] [DriverListener.java] [17] [INFO] PASS: keys cleared in element 'usernameTb'.
+[2022-03-21 09:44:50] [DriverListener.java] [17] [INFO] PASS: keys 'VJain' are sent to element 'usernameTb'.
+[2022-03-21 09:44:51] [DriverListener.java] [17] [INFO] PASS: keys cleared in element 'pwdTb'.
+[2022-03-21 09:44:51] [DriverListener.java] [17] [INFO] PASS: keys 'ABIMex@2022' are sent to element 'pwdTb'.
+[2022-03-21 09:44:52] [DriverListener.java] [17] [INFO] PASS: element 'signInBtn' is clicked.
+[2022-03-21 09:44:52] [LoginPage.java] [17] [INFO] Logged into HR application successfully
+[2022-03-21 09:44:58] [DriverListener.java] [17] [INFO] PASS: element 'customerDataTab' is clicked.
+[2022-03-21 09:45:04] [CreditPage.java] [17] [INFO] CustomerTab is clicked:
+[2022-03-21 09:45:09] [DriverListener.java] [17] [INFO] PASS: element 'AdvancedSearchTAB' is clicked.
+[2022-03-21 09:45:09] [CreditPage.java] [17] [INFO] Entering Customer Number: 0101110543
+[2022-03-21 09:45:09] [DriverListener.java] [17] [INFO] PASS: keys cleared in element 'customerNumberField'.
+[2022-03-21 09:45:10] [DriverListener.java] [17] [INFO] PASS: keys '0101110543' are sent to element 'customerNumberField'.
+[2022-03-21 09:45:10] [DriverListener.java] [17] [INFO] PASS: element 'searchBUtton' is clicked.
+[2022-03-21 09:45:14] [CreditPage.java] [17] [INFO] double click on the customer
+[2022-03-21 09:45:16] [CreditPage.java] [17] [INFO] click on characteristics TAB
+[2022-03-21 09:45:18] [DriverListener.java] [17] [INFO] PASS: element 'characteristicsTAB' is clicked.
+[2022-03-21 09:45:20] [CreditPage.java] [17] [INFO] click on Ad HOC credit Limit TAB
+[2022-03-21 09:45:22] [DriverListener.java] [17] [INFO] PASS: element 'adHocCreditLimitWFTAB' is clicked.
+[2022-03-21 09:45:25] [IMessager.java] [17] [INFO] TEST [Default test] PASSED at [21:45:25 2022-03-21]
