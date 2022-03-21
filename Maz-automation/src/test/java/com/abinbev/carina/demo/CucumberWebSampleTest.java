@@ -35,6 +35,6 @@ public class CucumberWebSampleTest extends CucumberBaseTest {
 	@AfterSuite(alwaysRun = true)
 	public void tearDownClass(ITestContext context) throws Exception {
 	    Runtime.getRuntime().exec("cmd.exe /C start \"kill-selenium-cmd\" \".\\carina-start\\kill-selenium-cmd.bat\"");
-	    LOGGER.info("The selenium server closed.");
+	    LOGGER.info("The selenium server closed...");
 	}
 }
